@@ -27,7 +27,7 @@ btns.forEach(e => {
 
         if (ev.target.innerHTML == "=") {
             if (scr.value.startsWith("+") || scr.value.startsWith("-") || scr.value.startsWith("*") || scr.value.startsWith("/") || scr.value.startsWith("%")) {
-                str = "bro srsly?😩"
+                str = "ye kya kar ra bhai😩"
                 scr.value = str
             } else {
                 str = eval(str)
