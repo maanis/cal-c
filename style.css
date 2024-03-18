@@ -14,6 +14,9 @@
     --buttons-neu:  10px 10px 10px -1px rgba(0, 99, 169, 0.16),
     -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
 }
+body{
+    background-color: var(--bgcol);
+}
 
 .darkmode{
     --mode:white;
@@ -29,8 +32,9 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding:0 20px;
+    padding:0 60px;
     height: 60px;
+    height: 10vh;
     align-items: center;
     background-color: var(--navbar-bg);
     border-bottom: 1px solid;
@@ -38,6 +42,9 @@
 .logo, .toggle{
     cursor: pointer;
     color: var(--mode);
+}
+.logo img{
+    width: 40px;
 }
 
 .toggle-container{
@@ -63,7 +70,9 @@
 }
 
 .container{
-    height: calc( 100vh - 61px);
+    height: calc(100vh - 61px);
+    height: calc(90vh - 1px);
+    /* padding: 40px 0; */
     /* background-color: red; */
     display: flex;
     background-color: var(--bgcol);
@@ -74,7 +83,7 @@
     background-color: var(--calc-col);
     box-shadow: var(--buttons-neu);
     padding: 10px;
-    height: 500px;
+    padding-top: 50px;
     border-radius: 14px;
     width: 300px;
     display: flex;
@@ -152,6 +161,12 @@ input{
 @media screen and (max-width:600px) {
     .toggle{
         cursor: default;
+    }
+    .logo img{
+        width: 35px;
+    }
+    .navbar{
+        padding: 0 22px;
     }
 }
 
