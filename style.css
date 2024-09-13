@@ -16,6 +16,7 @@
 }
 body{
     background-color: var(--bgcol);
+    overflow: hidden;
 }
 
 .darkmode{
